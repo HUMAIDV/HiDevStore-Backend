@@ -1,16 +1,7 @@
 import express, { json, response } from 'express';
 import { CategoryMod } from '../Models/CategoryModel.js';
-import { AWS_BUCKET_NAME } from '../config.js';
-import { AWS_ACCESS_KEY_ID } from '../config.js'
-import { AWS_SECRET_ACCESS_KEY } from '../config.js';
-import AWS from 'aws-sdk';
 
-import fs from 'fs';
-import multer from 'multer';
-import multerS3 from 'multer-s3';
 import bodyParser from 'body-parser';
-import pkg from 'body-parser';
-// const { json } = pkg;
 
 const app = express();
 app.use(bodyParser.json());
